@@ -13,11 +13,11 @@
 <body>
    
 <div class="signup">
-   <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-green-100 shadow-sm">
+  <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-green-100 shadow-sm">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <!-- Logo + Brand Name -->
-    <a href="#" class="flex items-center space-x-2 ms-3">
+    <a href="#" class="flex items-center space-x-2 ps-6">
       <div class="bg-green-600 p-2 rounded-full transition-transform duration-300 hover:scale-105 hover:p-4">
         <svg xmlns="http://www.w3.org/2000/svg"
              class="h-8 w-8 text-white"
@@ -35,19 +35,19 @@
     </a>
 
     <!-- Action Buttons -->
-    <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
+    <div class="flex flex-col sm:flex-row md:order-2 space-y-2 sm:space-y-0 sm:space-x-3 rtl:space-x-reverse mt-4 sm:mt-0">
       <button type="button"
-              class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 transition-all">
+              class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 transition-all w-full sm:w-auto">
         SignUp
       </button>
-      
+
       <button type="button"
-        class="border border-green-600 bg-white text-green-600 hover:bg-green-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 transition-all">
-        login
+              class="border border-green-600 bg-white text-green-600 hover:bg-green-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 transition-all w-full sm:w-auto">
+        Login
       </button>
- 
+
       <!-- Hamburger -->
-       <button data-collapse-toggle="navbar-sticky" type="button"
+      <button data-collapse-toggle="navbar-sticky" type="button"
               class="inline-flex items-center p-2 w-10 h-10 justify-center text-green-700 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200"
               aria-controls="navbar-sticky" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -61,7 +61,6 @@
     <!-- Nav Links -->
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-green-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-        
         <li>
           <a href="index.html"
              class="block py-2 px-3 text-white bg-green-600 rounded md:bg-transparent md:text-gray-800 md:p-0 hover:bg-green-100 hover:text-green-700 transition-colors duration-300"
@@ -70,23 +69,17 @@
         <li>
           <a href="about.html"
              class="block py-2 px-3 text-white bg-green-600 rounded md:bg-transparent md:text-gray-800 md:p-0 hover:bg-green-100 hover:text-green-700 transition-colors duration-300"
-             aria-current="page">
-            About
-          </a>
+             aria-current="page">About</a>
         </li>
         <li>
-          <a href=""
+          <a href="Services.html"
              class="block py-3 px-4 text-white bg-green-600 rounded md:bg-transparent md:text-gray-800 md:p-0 hover:bg-green-100 hover:text-green-700 transition-colors duration-300"
-             aria-current="page">
-            Services
-          </a>
+             aria-current="page">Services</a>
         </li>
         <li>
           <a href="contacts.html"
              class="block py-2 px-3 text-white bg-green-600 rounded md:bg-transparent md:text-gray-800 md:p-0 hover:bg-green-100 hover:text-green-700 transition-colors duration-300"
-             aria-current="page">
-            Contact
-          </a>
+             aria-current="page">Contact</a>
         </li>
       </ul>
     </div>
@@ -100,13 +93,205 @@
     <h1 class="text-5xl mb-6 text-gray-900">Connecting <span class="text-green-600">Farmers</span> with <span class="text-green-600">Workers</span></h1>
 
     <p class="text-xl text-gray-600 mb-8">GramConnect bridges the gap between daily wage workers from farming communities and farmers, ensuring optimal labor allocation for better agricultural productivity.</p> 
+
+     <div id="getStart" class="mt-4">
+        <button >
+          <a href="SignUp.html" class ="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 transition-all">Get Started</a>    
+        </button>
+     </div>
   </div>
   <div class = "floatImgery">
      <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Farmers working in field" class="rounded-lg shadow-xl w-full h-96 object-cover">
   </div>
 </div>      
+
+<div class="whyGC mt-32">
+  <h2>Why Choose GramConnect?</h2>
+  <br>
+  <span class="GC">
+    Our platform offers comprehensive solutions for connecting agricultural workers with
+  </span>
+  <span class="GC">
+    farmers, making the hiring process efficient and transparent
+  </span>
+</div>
+
+
+
   
+<div class ="features grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mt-20">
+  <div class="feat-1  hover:border-green-500">
+     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-green-600" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div>
+
+     <br>
+     <span>
+      Connect with the right workers based on skills and location
+     </span>
+  </div>
+
+  <div class="feat-2">
+    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 text-green-600" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg></div>
+
+    <span>
+      Book workers according to your needs and their availability
+    </span>
+  </div>
+
+  <div class="feat-3">
+    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-green-600" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></div>
+
+    <span>
+      Call and message workers directly through our platform
+    </span>
+  </div>
+
+  <div class="feat-4">
+    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-green-600" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div>
+
+    <span>
+      Verified Profiles
+      All workers and farmers are verified for your security
+    </span>
+  </div>
+
+  <div class="feat-5">
+     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-6 h-6 text-green-600" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div>
+
+     <span>
+      Rating System
+      Rate and review workers to help the community make better choices
+     </span>
+  </div>
+    
+  <div class="feat-6">
+    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 text-green-600" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div>
+
+    <span>
+      Secure Payments
+      Safe and transparent payment system for all transactions
+    </span>
+  </div>
+
+</div>
+
+<div class="Working mt-20">
+   <div class="headclass">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl mb-4 text-gray-900">How It Works</h2>
+        <p class="text-xl text-gray-600">Simple steps to get started</p>
+      </div>
+   </div>
+   <div class="Working grid grid-cols-1 md:grid-cols2 lg:grid-cols-3 gap-10 px-4 mt-20">
+      <div id="W-one">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl text-white">1</span>
+          </div>
+          <h3 class="text-xl mb-2 text-gray-900">Create Your Profile</h3>
+          <p class="text-gray-600">Sign up as a farmer or worker and complete your profile with skills and requirements</p>
+        </div>
+      </div>
+      <div id="W-two">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl text-white">2</span>
+          </div>
+          <h3 class="text-xl mb-2 text-gray-900">Find &amp; Connect</h3>
+          <p class="text-gray-600">Browse and connect with workers or farmers based on your needs and location</p>
+        </div>
+
+      </div>
+      <div id="W-three">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl text-white">3</span>
+          </div>
+          <h3 class="text-xl mb-2 text-gray-900">Book &amp; Work</h3>
+          <p class="text-gray-600">Schedule work, communicate directly, and complete transactions securely</p>
+        </div>
+
+      </div>
+   </div>
+</div>
+
+
+<div class="foot mt-40">
+<footer class="bg-black text-white">
+  <div class="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between md:items-start">
+      
+      <!-- Logo + Brand -->
+      <a href="#" class="flex items-center pl-[20px]">
+        <div class="bg-green-600 p-1 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               class="h-8 w-8 text-white"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+        </div>
+        <span class="text-2xl font-bold text-white ml-5">GramConnect</span>
+      </a>
+
+      <!-- Footer Links & Buttons -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-14 mt-6 md:mt-0">
+        
+        <!-- Column 1 -->
+        <div>
+          <h2 class="mb-3 text-sm font-semibold uppercase">Resources</h2>
+          <ul class="text-white font-medium space-y-2">
+            <li><a href="#" class="hover:underline">Flowbite</a></li>
+            <li><a href="#" class="hover:underline">Tailwind CSS</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h2 class="mb-3 text-sm font-semibold uppercase">Support</h2>
+          <ul class="text-white font-medium space-y-2">
+            <li><a href="#" class="hover:underline">Help Center</a></li>
+            <li><a href="#" class="hover:underline">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 with buttons -->
+        <div>
+          <h2 class="mb-3 text-sm font-semibold uppercase">Join Us</h2>
+          <div class="flex flex-col space-y-3">
+            <a href="SignUp.html" class="bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded">
+              Join as Farmer
+            </a>
+            <a href="SignUp.html" class="bg-green-600 hover:bg-green-700 text-white text-center py-2 px-4 rounded">
+              Join as Wage Worker
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+     
+    <div class="hr w-full border-t border-white my-1 mt-7"></div>
+    <div class="copyright text-white text-center mt-6">
+         © 2025 GramConnect. All rights reserved.
+    </div>
+  </div>
+
+</footer>
+
+
+</div>
     
   <script src="https://unpkg.com/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 </html>
+
+
+
+
+
+
