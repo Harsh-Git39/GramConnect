@@ -4,273 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - GramConnect</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: white;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding-top: 40px;
-        }
-
-        .header h1 {
-            color: #28a745;
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            color: #666;
-            font-size: 1.2rem;
-        }
-
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .contact-info {
-            background: #28a745;
-            border-radius: 20px;
-            padding: 40px;
-            border: 1px solid #218838;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .contact-form {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-            border: 1px solid #e9ecef;
-        }
-
-        .contact-info h2 {
-            color: white;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 25px;
-            color: white;
-        }
-
-        .contact-item .icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            font-size: 1.2rem;
-            border: 2px solid white;
-        }
-
-        .contact-item .details h3 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            font-weight: 500;
-            color: white;
-        }
-
-        .contact-item .details p {
-            opacity: 0.9;
-            font-size: 0.95rem;
-            color: white;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background: white;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .submit-btn {
-            background: #28a745;
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            font-weight: 500;
-        }
-
-        .submit-btn:hover {
-            background: #218838;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
-        }
-
-        .social-links {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .social-links h3 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .social-icon:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .map-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .map-section h3 {
-            color: #333;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            font-weight: 300;
-            text-align: center;
-        }
-
-        .map-placeholder {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 1.1rem;
-            border: 2px solid #e0e0e0;
-        }
-
-        @media (max-width: 768px) {
-            .contact-wrapper {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-
-            .header h1 {
-                font-size: 2.5rem;
-            }
-
-            .contact-info,
-            .contact-form,
-            .map-section {
-                padding: 30px 20px;
-            }
-
-            .social-icons {
-                flex-wrap: wrap;
-            }
-        }
-
-        .success-message {
-            display: none;
-            background: #4CAF50;
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -279,131 +14,76 @@
             <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
         </div>
 
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                
-                <div class="contact-item">
-                    <div class="icon">📍</div>
-                    <div class="details">
-                        <h3>Address</h3>
-                        <p>123 Business Street<br>Mumbai, Maharashtra 400001<br>India</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="icon">📞</div>
-                    <div class="details">
-                        <h3>Phone</h3>
-                        <p>+91 98765 43210<br>+91 87654 32109</p>
-                    </div>
-                </div>
-
-
-
-                <div class="contact-item">
-                    <div class="icon">🕒</div>
-                    <div class="details">
-                        <h3>Business Hours</h3>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
-                    </div>
-                </div>
+        <div class="contact-form">
+            <div class="success-message" id="successMessage">
+                Thank you for your message! We'll get back to you soon.
             </div>
 
-            <div class="contact-form">
-                <div class="success-message" id="successMessage">
-                    Thank you for your message! We'll get back to you soon.
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
                 </div>
 
-                <form id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="business">Business Partnership</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a subject</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Technical Support</option>
-                            <option value="business">Business Partnership</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
 
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
 
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            
+            <div class="contact-item">
+                <div class="icon">📍</div>
+                <div class="details">
+                    <h3>Address</h3>
+                    <p>Pimpri Chinchwad College of Engineering<br>Ravet, Pune<br>Maharashtra, India</p>
+                </div>
+            </div>
 
+            <div class="contact-item">
+                <div class="icon">📞</div>
+                <div class="details">
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210<br>+91 87654 32109</p>
+                </div>
+            </div>
 
-
+            <div class="contact-item">
+                <div class="icon">🕒</div>
+                <div class="details">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-    
-            if (!data.firstName || !data.lastName || !data.subject || !data.message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            console.log('Form data:', data);
-
-    
-            document.getElementById('successMessage').style.display = 'block';
-            
-            
-            this.reset();
-            
-            
-            setTimeout(() => {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        });
-
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-
-        document.querySelectorAll('.contact-info, .contact-form, .map-section').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
