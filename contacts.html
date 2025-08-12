@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GramConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <div class="contact-form">
+            <div class="success-message" id="successMessage">
+                Thank you for your message! We'll get back to you soon.
+            </div>
+
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="business">Business Partnership</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            
+            <div class="contact-item">
+                <div class="icon">📍</div>
+                <div class="details">
+                    <h3>Address</h3>
+                    <p>Pimpri Chinchwad College of Engineering<br>Ravet, Pune<br>Maharashtra, India</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">📞</div>
+                <div class="details">
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210<br>+91 87654 32109</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">🕒</div>
+                <div class="details">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
